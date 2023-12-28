@@ -44,6 +44,8 @@ struct ContactRowView: View {
             }
 //                .listStyle(PlainListStyle())
         }
+        .listStyle(.insetGrouped)
+        .background(Color(.secondarySystemBackground))
     }
 }
 
