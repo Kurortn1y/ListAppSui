@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var contacts = Person.getPersons()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             TabView {
                     FullListView(contacts: $contacts)
                         .tabItem { Label("Contacts", systemImage: "person.2.fill") }

@@ -14,11 +14,14 @@ struct ContactRowView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("\(contact.fullName)")
-                .font(.system(size: 32))
-                    .bold()
-                    .lineSpacing(16)
-                    .padding(.leading, 20)
+        
+                Text(contact.fullName)
+                        .font(.system(size: 32))
+                        .bold()
+                        .lineSpacing(16)
+                         .padding(.leading, 20)
+            
+            
                 List {
                     HStack {
                         Spacer()
@@ -39,6 +42,7 @@ struct ContactRowView: View {
                         Text("\(contact.number)")
                     }
             }
+//                .listStyle(PlainListStyle())
         }
     }
 }
