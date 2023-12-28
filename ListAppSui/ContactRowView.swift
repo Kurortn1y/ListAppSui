@@ -42,9 +42,7 @@ struct ContactRowView: View {
                         Text("\(contact.number)")
                     }
             }
-//                .listStyle(PlainListStyle())
         }
-        .listStyle(.insetGrouped)
         .background(Color(.secondarySystemBackground))
     }
 }
